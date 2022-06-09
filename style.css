@@ -1,133 +1,132 @@
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@700&family=Josefin+Sans:wght@600&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700;900&display=swap');
 
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body{
-    min-height: 100vh;
-    width: 100%;
-    background-color: #292B2E;
-}
-
-header{
-  height: 50px;
-  width: 100vw;
-  padding: 15px;
-  position: fixed;
-}
-
-/* Style the header with a grey background and some padding */
-
-header ul {
-    width: 100vw;
-
+section {
+    height: 100vh;
+    padding-top: 70px;
     display: flex;
-    gap: 30px;
-    font-family: 'Poppins', sans-serif;
-    position: fixed;
-    justify-content: end;
-    padding-right: 750px;
-  }
-  .logo{
-    position: absolute;
-    left: 0;
-    padding-top: 0px;
-  }
-  
-  .button{
-    color: #fff;
-    background-color: #8738af;
-    transition: 100ms;
-    right: 0;
-    position: absolute;
-    margin-right: 60px;
-    margin-top: 8px;
-    border-radius: 30px;
-    border: none;
-    font-family: 'Poppins', sans-serif;
-  }
+    flex-direction: column;
+    background-color: #000;
+}
 
-  .button-text{
-    color: #fff;
-  }
-
-  .button:hover{
-    background-color: #a46dc0;
-    color: #fff;
-    border: #8738af;
-  }
-
-  
-  /* Style the header links */
-  header a {
-    float: left;
-    color:#fff;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    background-color: #292B2E;
-    
-  }
-  
-  /* Change the background color on mouse-over */
-  header a:hover {
-    color: #9C47C6;
-  }
-  
-
-  .header-li{
+.home-container {
     display: flex;
     align-items: center;
-  }
-  
-  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .header-right {
-      float: none;
-    }
-  }
-
-  
-  p{
-    color: #fff;
-    text-align: center;    
-  }
-
-  main{
+    flex-direction: column;
+}
+.boas-vindas {
+    font-family:'Inter', sans-serif;
     display: flex;
-    flex-grow: 1;
-  }
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFF;
+}
+.curso {
+    font-family:'Inter', sans-serif;
+    display: flex;
+    /* justify-content: center; */
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFF;
+}
+.codigos{
+    font-family:'Inter', sans-serif;
+    display: flex;
+    /* justify-content: center; */
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    margin-top: 10px;
+}
 
-  .home-container{
+.larissa{
+    width: 200px;
+    height: 230px;
+}
+
+.column{
+    background-color: #292b2e80;
+    margin-left: 70px;
+    margin-top: 40px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.columns{
+    padding-right: 80px;
+}
+
+.text{
+    display: flex;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+}
+
+.numero{
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-
-  .text-one{
-    color: #fff;
-    padding-left:  720px;
-    margin-top: 250px;
+    color: #9C47C6;
     font-family: 'Inter', sans-serif;
-    font-size: 28px;
+    font-size: 22px;
+    justify-content: center;
+}
+
+.icons{
+    width: 40px;
+    height: 40px;
     display: flex;
-  }
+}
 
-  .text-two{
-    color: #fff;
-    padding-left:  720px;
-    margin-top: 250px;
+.img-sobre{
+    width: 600px;
+    height: 500px;
+    padding-left: 40px;
+    float: left;
+}   
+
+
+
+.sobre-container{
+    padding-top: 50px;
+}
+
+.quem-sou{
+    color: #FFF;
     font-family: 'Inter', sans-serif;
-    font-size: 28px;
-  }
+    font-size: 30px;
+    padding-top: 100px;
+    
+}
+
+.sobre-mim-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    display: flex;
+    padding-top: 50px;
+    width: 600px;
+}
+
+.quem-sou-eu{
+    text-decoration: underline #9C47C6 ;
+}
+
+
+.sobre-button {
+    color: #FFF;
+    border: #6D1499 solid 3px;
+    border-radius: 50px;
+    padding: 12px 26px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 300ms;
+    background-color: #6e2792;
+    float: right;
+    margin-right: 580px;
+    margin-top: 100px;
+}
+
+.sobre-button:hover {
+    background-color: #9C47C6;
+}
+
